@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    hibernate:
+      show-sql: true
+      ddl-auto: create
+  datasource:
+    url: jdbc:postgresql://192.168.2.10:5432/portal
+    username: postgres
+    password: sa
+    driverClassName: org.postgresql.Driver
+  main:
+    allow-circular-references: true
+
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        orm:
+          jdbc:
+            bind: TRACE
+
